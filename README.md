@@ -50,13 +50,13 @@ Now to restore the backup of the PostgreSQL database and generate Django models 
 ./reflect_db.sh <path_to_backup_file/backup_file.sql>
 ```
 
-To further improve the example, imagine that the name of my backup file is `backup.sql` (very creative) and the path to it is` / home / mdcg / dev / `, so the command would look like this:
+To further improve the example, imagine that the name of my backup file is `backup.sql` (very creative) and the path to it is` /home/mdcg/dev/`, so the command would look like this:
 
 ```
 ./reflect_db.sh /home/mdcg/dev/backup.sql
 ```
 
-Depending on the size of the backup file, the above command may take considerable minutes, but again, be patient. At the end of the process, go to the `models.py` file located in` src / api / `and see if the models were generated.
+Depending on the size of the backup file, the above command may take considerable minutes, but again, be patient. At the end of the process, go to the `models.py` file located in` src/api/ `and see if the models were generated.
 
 ## Contributing
 
