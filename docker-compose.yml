@@ -2,16 +2,14 @@ version: '2.2'
 
 services:
   db:
-    image: postgres:9.6.15-alpine
+    image: postgres:9-alpine
     restart: always
     env_file:
       - ./config/.env
     volumes:
       - ./pgdata:/var/lib/postgresql/data
-  reflected-dev:
-    build:
-      context: .
-      dockerfile: dev.Dockerfile
+  reflected_dev:
+    build: .
     stdin_open: true
     tty: true
     env_file:

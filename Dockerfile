@@ -1,4 +1,4 @@
-FROM python:3.6.9-alpine3.10
+FROM python:3.8.3-alpine3.12
 
 MAINTAINER MDCG
 ENV PYTHONUNBUFFERED 1
